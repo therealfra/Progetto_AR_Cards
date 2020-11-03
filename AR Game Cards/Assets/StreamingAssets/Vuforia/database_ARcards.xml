@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="cartabase" size="0.090000 0.061350" />
+    <ImageTarget name="marker_barca2" size="0.050000 0.033806" />
+  </Tracking>
+</QCARConfig>
