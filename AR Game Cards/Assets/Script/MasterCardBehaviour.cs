@@ -5,6 +5,7 @@ using UnityEngine;
 public class MasterCardBehaviour : MonoBehaviour
 {
     public GameObject Pini;
+    public GameObject Tenda;
 
     // Start is called before the first frame update
     void Start()
@@ -20,9 +21,15 @@ public class MasterCardBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.name == "Carta_Pini")
+        if (other.gameObject.name == "PiniCard")
         {
             Pini.SetActive(true);
+
+        }
+
+         if (other.gameObject.name == "TendaCard")
+        {
+            Tenda.SetActive(true);
 
         }
     }
@@ -30,12 +37,17 @@ public class MasterCardBehaviour : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
 
-        if (other.gameObject.name == "Carta_Pini")
+        if (other.gameObject.name == "PiniCard")
         {
             Pini.SetActive(false);
 
         }
+        
+        if (other.gameObject.name == "TendaCard")
+        {
+            Tenda.SetActive(false);
 
+        }
 
     }
 }
