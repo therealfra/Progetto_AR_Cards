@@ -11,7 +11,7 @@ public class MasterCardBehaviour : MonoBehaviour
     public GameObject Tartaruga;
     public GameObject Uccello;
     public GameObject AlberiInFiore;
-    
+    public GameObject AlberiVerdi;
     
 
     // Start is called before the first frame update
@@ -70,6 +70,13 @@ public class MasterCardBehaviour : MonoBehaviour
 
         }
 
+           if (other.gameObject.name == "AVCard")
+        {
+           AlberiVerdi.SetActive(true);
+
+        }
+
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -116,6 +123,12 @@ public class MasterCardBehaviour : MonoBehaviour
              if (other.gameObject.name == "AIFCard")
         {
            AlberiInFiore.SetActive(false);
+
+        }
+
+          if (other.gameObject.name == "AVCard")
+        {
+           AlberiVerdi.SetActive(false);
 
         }
     }
