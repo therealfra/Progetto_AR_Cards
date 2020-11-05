@@ -10,6 +10,7 @@ public class MasterCardBehaviour : MonoBehaviour
     public GameObject Panchina;
     public GameObject Tartaruga;
     public GameObject Uccello;
+    public GameObject AlberiInFiore;
     
     
 
@@ -62,6 +63,13 @@ public class MasterCardBehaviour : MonoBehaviour
             Uccello.SetActive(true);
 
         }
+
+          if (other.gameObject.name == "AIFCard")
+        {
+           AlberiInFiore.SetActive(true);
+
+        }
+
     }
 
     private void OnTriggerExit(Collider other)
@@ -102,6 +110,12 @@ public class MasterCardBehaviour : MonoBehaviour
           if (other.gameObject.name == "UccelloCard")
         {
             Uccello.SetActive(false);
+
+        }
+
+             if (other.gameObject.name == "AIFCard")
+        {
+           AlberiInFiore.SetActive(false);
 
         }
     }
