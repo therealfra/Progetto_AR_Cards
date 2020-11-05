@@ -7,6 +7,9 @@ public class MasterCardBehaviour : MonoBehaviour
     public GameObject Pini;
     public GameObject Tenda;
     public GameObject Erba;
+    public GameObject Panchina;
+    public GameObject Tartaruga;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +42,18 @@ public class MasterCardBehaviour : MonoBehaviour
             Tenda.SetActive(true);
 
         }
+
+          if (other.gameObject.name == "PanchinaCard")
+        {
+            Panchina.SetActive(true);
+
+        }
+
+          if (other.gameObject.name == "TartarugaCard")
+        {
+            Tartaruga.SetActive(true);
+
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -62,6 +77,18 @@ public class MasterCardBehaviour : MonoBehaviour
 
         }
 
+         if (other.gameObject.name == "PanchinaCard")
+        {
+            Panchina.SetActive(false);
+
+        }
+
+        
+          if (other.gameObject.name == "TartarugaCard")
+        {
+            Tartaruga.SetActive(false);
+
+        }
     }
 }
 
