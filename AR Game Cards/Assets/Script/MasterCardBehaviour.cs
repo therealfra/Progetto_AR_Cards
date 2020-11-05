@@ -9,6 +9,8 @@ public class MasterCardBehaviour : MonoBehaviour
     public GameObject Erba;
     public GameObject Panchina;
     public GameObject Tartaruga;
+    public GameObject Uccello;
+    
     
 
     // Start is called before the first frame update
@@ -54,6 +56,12 @@ public class MasterCardBehaviour : MonoBehaviour
             Tartaruga.SetActive(true);
 
         }
+
+          if (other.gameObject.name == "UccelloCard")
+        {
+            Uccello.SetActive(true);
+
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -87,6 +95,13 @@ public class MasterCardBehaviour : MonoBehaviour
           if (other.gameObject.name == "TartarugaCard")
         {
             Tartaruga.SetActive(false);
+
+        }
+
+        
+          if (other.gameObject.name == "UccelloCard")
+        {
+            Uccello.SetActive(false);
 
         }
     }
