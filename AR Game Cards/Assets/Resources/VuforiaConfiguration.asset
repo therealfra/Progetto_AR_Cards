@@ -20,7 +20,7 @@ MonoBehaviour:
     maxSimultaneousImageTargets: 2
     maxSimultaneousObjectTargets: 2
     virtualSceneScaleFactor: 1
-    useDelayedLoadingObjectTargets: 0
+    useDelayedLoadingObjectTargets: 1
     modelTargetRecoWhileExtendedTracked: 1
     version: 9.5.4
     eulaAcceptedVersions: '{"Values":["9.5"]}'

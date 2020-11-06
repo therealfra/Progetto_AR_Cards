@@ -34,6 +34,7 @@ public class MasterCardBehaviour : MonoBehaviour
         if (other.gameObject.name == "Barchettacard")
         {
             Barchetta.SetActive(false);
+            
              print("Barchetta disattiva");
         }   
 
