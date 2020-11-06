@@ -43,8 +43,10 @@ public class MasterCardBehaviour : MonoBehaviour
          if (other.gameObject.name == "TendaCard")
         {
             Tenda.SetActive(true);
-
+            print("Tenda attiva");
         }
+
+         
 
           if (other.gameObject.name == "PanchinaCard")
         {
@@ -92,6 +94,8 @@ public class MasterCardBehaviour : MonoBehaviour
         {
             Tenda.SetActive(false);
 
+
+            print("Tenda disattiva");
         }
 
         if (other.gameObject.name == "ErbaCard")
