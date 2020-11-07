@@ -12,6 +12,7 @@ public class MasterCardBehaviour : MonoBehaviour
     public GameObject Uccello;
     public GameObject AlberiInFiore;
     public GameObject AlberiVerdi;
+    public GameObject Barchetta;
     
 
     // Start is called before the first frame update
@@ -31,6 +32,12 @@ public class MasterCardBehaviour : MonoBehaviour
         if (other.gameObject.name == "PiniCard")
         {
             Pini.SetActive(true);
+
+        }
+
+          if (other.gameObject.name == "BarchettaCard")
+        {
+            Barchetta.SetActive(true);
 
         }
 
@@ -87,6 +94,12 @@ public class MasterCardBehaviour : MonoBehaviour
         if (other.gameObject.name == "PiniCard")
         {
             Pini.SetActive(false);
+
+        }
+
+         if (other.gameObject.name == "BarchettaCard")
+        {
+            Barchetta.SetActive(false);
 
         }
         
