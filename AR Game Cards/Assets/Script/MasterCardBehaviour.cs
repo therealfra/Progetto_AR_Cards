@@ -18,6 +18,8 @@ public class MasterCardBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        AlberiInFiore.SetActive(false);
         
     }
 
